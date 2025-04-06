@@ -1,0 +1,62 @@
+<FancyLayout>:
+    orientation: 'vertical'
+    padding: 30
+    spacing: 25
+
+    canvas.before:
+        Color:
+            rgba: (0.16, 0.18, 0.22, 1)
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [20]
+
+    Label:
+        text: "Login"
+        font_size: 36
+        color: 1, 1, 1, 1
+        size_hint_y: 0.2
+        halign: 'center'
+        bold: True
+
+    TextInput:
+        id: username
+        hint_text: "Username"
+        multiline: False
+        padding: 15
+        font_size: 18
+        background_color: (0.25, 0.25, 0.3, 1)
+        foreground_color: (1, 1, 1, 1)
+        cursor_color: 1, 1, 1, 1
+        size_hint_y: 0.12
+
+    TextInput:
+        id: password
+        hint_text: "Password"
+        password: True
+        multiline: False
+        padding: 15
+        font_size: 18
+        background_color: (0.25, 0.25, 0.3, 1)
+        foreground_color: (1, 1, 1, 1)
+        cursor_color: 1, 1, 1, 1
+        size_hint_y: 0.12
+
+    Button:
+        text: "Sign In"
+        font_size: 20
+        size_hint_y: 0.15
+        background_normal: ''
+        background_color: (0.2, 0.6, 1, 1)
+        color: (1, 1, 1, 1)
+        on_press: root.on_login()
+
+    Label:
+        id: feedback
+        text: ""
+        markup: True
+        font_size: 16
+        size_hint_y: 0.1
+        halign: 'center'
+        valign: 'middle'
+        color: (1, 1, 1, 1)

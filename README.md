@@ -1,54 +1,32 @@
-💰 Expense Manager Desktop Application
+💼 Expense Manager – Desktop Application
 
-A full-featured desktop application built with Python (PySide6) and MySQL for managing and tracking expenses efficiently. Designed with modularity, scalability, and usability in mind, this application enables dynamic database management, real-time updates, and report generation.
+A cross-platform desktop app built with Python (PySide6) and MySQL to simplify personal and business expense tracking. Includes real-time database interaction, modern UI, and PDF export features.
 🚀 Features
 
-    🔄 Dynamic Database Management
+    📊 Expense Management
+    Add, edit, delete, and view expenses in a clean table-based interface.
 
-        Create, select, and delete MySQL databases at runtime
+    🗄️ MySQL Integration
+    Select or create databases dynamically at runtime. Tables are auto-created if not present.
 
-        Auto-generate required tables with predefined schema
+    🧠 Input Validation & Error Handling
+    Validates all user input and handles database errors with clear feedback messages.
 
-    ✏️ Comprehensive CRUD Operations
+    🖥️ Modern UI (PySide6)
+    Built using Qt for Python with styled widgets and responsive layouts.
 
-        Add, update, and delete expense records
+    📄 PDF Export
+    Generate printable PDF reports with totals and formatted tables using FPDF.
 
-        Instant UI refresh with in-place editing support
+    🧱 Modular Code Structure
+    Organized into UI components, database logic, and export utilities for easier maintenance and scaling.
 
-    🧠 Smart Input Validation & Error Handling
+🛠️ Tech Stack
 
-        Prevents malformed entries and handles database exceptions gracefully
+    Python 3
 
-    🎨 Modern UI (PySide6 / Qt for Python)
+    PySide6 (Qt for Python)
 
-        Sleek, responsive interface with custom-styled widgets
+    MySQL
 
-        Tabular views powered by QTableWidget
-
-    📄 PDF Report Generation
-
-        Generate clean, paginated reports using FPDF
-
-        Includes headers, tables, and auto-calculated totals
-
-    🔌 Stable MySQL Connection Handling
-
-        Auto-reconnect and user-friendly fallback error messages on failure
-
-    🧩 Modular Code Architecture
-
-        Separated concerns: UI, database, export, and utility modules
-
-        Easily extendable for additional features like user accounts or analytics
-
-🛠 Tech Stack
-
-    Language: Python 3
-
-    GUI: PySide6 (Qt for Python)
-
-    Database: MySQL
-
-    PDF Export: FPDF
-
-    IDE: Any Python IDE (e.g., VS Code, PyCharm)
+    FPDF (PDF generation)
